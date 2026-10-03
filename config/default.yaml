@@ -1,6 +1,0 @@
-app:
-  name: "firmware-uefi-rootkit-detector"
-  environment: "production"
-  logging:
-    level: "INFO"
-    format: "json"

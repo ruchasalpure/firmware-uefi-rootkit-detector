@@ -1,8 +1,0 @@
-{
-  "agent_id": "firmware-uefi-rootkit-detector",
-  "protocol": "opencode/v1",
-  "capabilities": [
-    "autonomous",
-    "governed"
-  ]
-}

@@ -1,4 +1,0 @@
-spec: nanobot/v1
-name: firmware-uefi-rootkit-detector
-runtime: python3.11
-entrypoint: agent.py

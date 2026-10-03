@@ -1,15 +1,26 @@
-# Duties and Responsibilities for Firmware UEFI Rootkit Detector Agent
+# Operational Duties & Segregation of Responsibilities
 
-## Dual-Control Architecture
-Maker:
-firmware-volume-parser
+## Roles & Separation of Concerns
 
-Checker:
-bootkit-signature-checker
+No single agent may hold conflicting roles in any execution lifecycle:
 
-## Operational Workflow
-1. The Maker (firmware-volume-parser) analyzes incoming telemetry, context, and requirements.
-2. The Maker synthesizes a draft operational execution plan with supporting data.
-3. The Checker (bootkit-signature-checker) independently verifies all assumptions and constraints.
-4. If validation passes, the plan is signed, logged, and committed.
-5. All actions are appended to the immutable governance audit trail.
+- An agent assigned the maker role cannot perform verification or auditing
+- An agent assigned the checker role cannot perform plan generation or execution
+- An agent assigned the executor role cannot perform compliance auditing
+- An agent assigned the auditor role cannot perform action execution
+
+## Handoff Workflows
+
+1. The maker agent generates the initial diagnostic assessment and candidate remediation strategy.
+2. The checker agent audits evidence quality, checks policy constraints, and validates invariants.
+3. The auditor agent signs the cryptographic trace and verifies that no sensitive data is leaked.
+4. The executor agent delivers the approved intervention to the target runtime environment.
+
+## Isolation Policy
+
+- **State isolation:** full
+- **Credential segregation:** separate
+
+## Enforcement
+
+strict
