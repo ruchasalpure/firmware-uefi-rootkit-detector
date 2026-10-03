@@ -1,0 +1,5 @@
+{
+  "name": "firmware-uefi-rootkit-detector",
+  "service": "aws-kiro",
+  "version": "1.0.0"
+}

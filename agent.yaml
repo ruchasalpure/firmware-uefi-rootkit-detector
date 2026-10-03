@@ -1,0 +1,26 @@
+spec_version: "0.1.0"
+name: "firmware-uefi-rootkit-detector"
+version: "1.0.0"
+category: "cybersecurity"
+author: "Rucha Salpure"
+description: "Analyzes SPI flash memory dumps and UEFI Option ROM bytecode to detect persistent bootkits, firmware implants, and unauthorized NVRAM mutations"
+capabilities:
+  - "uefi-firmware-integrity-audit"
+  - "autonomous-decision-making"
+  - "explainable-auditing"
+  - "multi-agent-collaboration"
+skills:
+  - "uefi-firmware-integrity-audit"
+tools:
+  - "python_executor"
+  - "audit_logger"
+  - "schema_validator"
+runtime:
+  environment: "python3.11"
+  memory_limit: "4GB"
+  timeout_seconds: 300
+governance:
+  audit_logging: true
+  human_in_the_loop: false
+  maker_checker: true
+  explainability_required: true

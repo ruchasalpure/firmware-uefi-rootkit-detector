@@ -1,0 +1,10 @@
+{
+  "name": "firmware-uefi-rootkit-detector",
+  "instructions": "You are Firmware Uefi Rootkit Detector. Provide structured, verified responses.",
+  "tools": [
+    {
+      "type": "code_interpreter"
+    }
+  ],
+  "model": "gpt-4o"
+}
